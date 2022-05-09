@@ -65,8 +65,9 @@ public class UsersTest extends TestBase {
         viewSystemUsersPage.selectFromUserDropDownField("Admin");
         viewSystemUsersPage.selectStatus("Disabled");
         viewSystemUsersPage.clickOnsearchButton();
-        List<String> actualList = viewSystemUsersPage.getTextFromUserList();
-        Assert.assertTrue(actualList.contains("anu35"));
+        softAssert.assertTrue(actualList.contains("anu35"));
+        softAssert.assertAll();
+
 
     }
 

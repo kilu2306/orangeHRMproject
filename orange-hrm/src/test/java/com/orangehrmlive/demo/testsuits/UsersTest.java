@@ -26,7 +26,7 @@ public class UsersTest extends TestBase {
     }
 
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke","regression"})
     public void adminShouldAddUserSuccessFully() throws InterruptedException {
 
         SoftAssert softAssert = new SoftAssert();
@@ -53,7 +53,7 @@ public class UsersTest extends TestBase {
 
     }
 
-    @Test(groups = {"sanity"})
+    @Test(groups = {"sanity","regression"})
     public void searchTheUserCreatedAndVerifyIt() {
         SoftAssert softAssert = new SoftAssert();
         logInPage.logInApp("Admin", "admin123");

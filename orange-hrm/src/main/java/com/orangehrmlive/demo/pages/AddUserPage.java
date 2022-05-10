@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AddUserPage extends Utility {
-    public void inIt(){
+    public AddUserPage(){
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "//h1[@id='UserHeading']")

@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ViewSystemUsersPage extends Utility {
-    public void inIt() {
+    public ViewSystemUsersPage(){
         PageFactory.initElements(driver, this);
     }
 

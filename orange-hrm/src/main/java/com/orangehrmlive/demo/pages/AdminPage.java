@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AdminPage extends Utility {
-    public void inIt() {
+    public AdminPage() {
         PageFactory.initElements(driver, this);
     }
 

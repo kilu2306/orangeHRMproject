@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogInPage extends Utility {
-    public void inIt(){
+    public LogInPage(){
         PageFactory.initElements(driver,this);
     }
     @FindBy (xpath = "//input[@id='txtUsername']")
